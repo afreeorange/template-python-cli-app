@@ -1,0 +1,6 @@
+docs_dir: source
+site_dir: build/html
+theme: readthedocs
+site_name: {{cookiecutter.project_name}}
+extra:
+    version: {{cookiecutter.version}}

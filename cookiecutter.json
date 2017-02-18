@@ -1,0 +1,10 @@
+{
+    "author": "Pascal Python",
+    "email": "pascal.python@nikhil.io",
+    "package_name": "cli_app",
+    "project_name": "My Python CLI App",
+    "project_description": "A Command-line app in Python",
+    "project_repository": "git@github.com:afreeorange/repo.git",
+    "version": "0.0.1",
+    "documentation_markup": ["reStructuredText", "Markdown"]
+}

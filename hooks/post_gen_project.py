@@ -8,10 +8,13 @@ Wed Jul 13 11:23:20 CDT 2016
 
 
 from __future__ import print_function
-import ast
+
 import os
 import shutil
+import subprocess
 import sys
+
+import ast
 
 
 # We do this since the JSON dumped by Jinja2/Cookiecutter has single
@@ -46,7 +49,22 @@ else:
 # Clean up
 os.remove('../{{cookiecutter.package_name}}/.project_data')
 
+# Attempt to initialize git repo with specified URI. This is not
+# Windows-friendly. I don't care.
+try:
+    subprocess.call(
+        'cd ../{{cookiecutter.package_name}} && \
+        git init && \
+        git remote add origin {{cookiecutter.project_repository}}',
+        shell=True
+    )
+    print('{{cookiecutter.project_repository}} is remote called "origin"')
+except Exception as e:
+    print('! Could not initialize {{cookiecutter.package_name}} as git repo')
+    print('! Error was "{}"'.format(str(e)))
+
 print("""
 All done! See README.md in {{cookiecutter.package_name}}/ for
 some more information on how to start using your project.
 """)
+

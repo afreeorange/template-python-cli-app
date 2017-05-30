@@ -5,7 +5,7 @@ Usage
 -----
 
     wget http://public.nikhil.io/Makefile
-    make command-line-app
+    make
 
 What that does
 --------------
@@ -18,3 +18,10 @@ What that does
 * Easy version-bumping using `semantic versioning` and [bumpversion](https://github.com/peritus/bumpversion)
 * A comprehensive `.gitignore` (via [Github](https://raw.githubusercontent.com/github/gitignore/master/Python.gitignore))
 * A `Makefile` that allows me to do many other things :)
+
+
+License
+-------
+
+Do whatever you want.
+

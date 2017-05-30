@@ -1,10 +1,11 @@
 {
-    "author": "Pascal Python",
-    "email": "pascal.python@nikhil.io",
-    "package_name": "cli_app",
-    "project_name": "My Python CLI App",
-    "project_description": "A Command-line app in Python",
-    "project_repository": "git@github.com:afreeorange/repo.git",
+    "author": "Priscilla Python",
+    "email": "priscilla.python@organization",
+    "project_repository": "git@github.com:user/repo.git",
     "version": "0.0.1",
-    "documentation_markup": ["reStructuredText", "Markdown"]
+    "documentation_markup": ["reStructuredText", "Markdown"],
+
+    "package_name": "my_cli_app",
+    "project_name": "My Python CLI App",
+    "project_description": "A sample command-line app"
 }

@@ -4,7 +4,7 @@ Cookiecutter Template for a A Command-line app in Python
 Usage
 -----
 
-    wget http://public.nikhil.io/Makefile
+    wget https://raw.githubusercontent.com/afreeorange/python-project-bootstrapper/master/Makefile
     make
 
 What that does

@@ -4,7 +4,9 @@ Cookiecutter Template for a A Command-line app in Python
 Usage
 -----
 
-    wget https://raw.githubusercontent.com/afreeorange/python-project-bootstrapper/master/Makefile
+The URI simply redirects to [this](https://raw.githubusercontent.com/afreeorange/python-project-bootstrapper/master/Makefile)
+
+    wget http://public.nikhil.io/Makefile
     make
 
 What that does
@@ -24,4 +26,3 @@ License
 -------
 
 Do whatever you want.
-

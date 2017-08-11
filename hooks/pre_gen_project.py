@@ -13,7 +13,7 @@ cleaned_package_name = ''.join(
 
 invalid_message = """
 Invalid package name!
-Can only contain alphabets (upper or lowercase) and underscores
+Can only contain upper or lowercase letters and underscores
 """
 
 if cleaned_package_name != '{{cookiecutter.package_name}}':
@@ -23,4 +23,3 @@ if cleaned_package_name != '{{cookiecutter.package_name}}':
 # Upgrade setuptools to avoid version issues when running
 # coverage or linting tests
 pip.main(['install', '--upgrade', 'setuptools'])
-

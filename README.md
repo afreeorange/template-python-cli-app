@@ -6,7 +6,7 @@ What it says on the tin. Should be compatible with both Pythons 2 and 3.
 Usage
 -----
 
-You'll need an active virtualenv, [cookiecutter](https://github.com/audreyr/cookiecutter) and [GNU `make`](https://www.gnu.org/software/make)
+You'll need an active virtualenv, [cookiecutter](https://github.com/audreyr/cookiecutter), and [GNU `make`](https://www.gnu.org/software/make)
 
 ```bash
 # In a virtualenv

@@ -1,8 +1,8 @@
 from __future__ import print_function
 
 from string import ascii_letters
-import pip
 import sys
+import subprocess
 
 # Check for a valid package name
 cleaned_package_name = ''.join(
@@ -22,4 +22,13 @@ if cleaned_package_name != '{{cookiecutter.package_name}}':
 
 # Upgrade setuptools to avoid version issues when running
 # coverage or linting tests
-pip.main(['install', '--upgrade', 'setuptools'])
+try:
+    subprocess.call(
+        'pip install --upgrade setuptools',
+        shell=True,
+    )
+except Exception as e:
+    print('! Could not upgrade setuptools')
+    print('! Error was "{}"'.format(str(e)))
+    sys.exit(1)
+
